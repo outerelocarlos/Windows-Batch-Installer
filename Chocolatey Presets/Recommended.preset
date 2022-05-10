@@ -1,0 +1,425 @@
+﻿##########
+##
+## Windows Batch Installer - Chocolatey Recommended Preset
+## Primary Author: Carlos Outerelo <outerelocarlos@gmail.com>
+## Primary Author Source: https://github.com/outerelocarlos/Windows-Batch-Installer
+##
+##########
+
+### Script Setup
+RequireAdmin
+CreateRestorePoint
+InstallChocolatey
+ChocolateyAutoUpdate
+
+### Script Extras
+
+### Runtimes
+choco install javaruntime -y 
+choco install vcredist-all -y 
+# choco install directx -y 
+
+### Additional File Extension Support
+
+### Command Line Utilities
+choco install git -y 
+# choco install gh -y 
+choco install wget -y 
+# choco install sed -y 
+# choco install microsoft-windows-terminal -y 
+# choco install adb -y 
+# choco install ffmpeg-full -y 
+# choco install nircmd -y 
+
+### System Monitoring and Control
+# choco install cpu-z -y 
+# choco install gpu-z -y 
+# choco install pci-z -y 
+# choco install hwinfo -y 
+# choco install hwinfo.portable -y 
+# choco install hwmonitor -y 
+# choco install msiafterburner -y 
+# choco install evga-precision-x1 -y 
+# choco install occt -y 
+# choco install cinebench -y 
+# choco install prime95 -y 
+# choco install prime95.portable -y 
+# choco install aida64-extreme -y 
+# choco install aida64-engineer -y 
+# choco install furmark -y 
+# choco install heaven-benchmark -y 
+# choco install heaven-benchmark -y 
+# choco install superposition-benchmark -y 
+
+### System Security, Recovery and Clean-up
+# choco install malwarebytes -y 
+choco install adwcleaner -y 
+# choco install windowsfirewallcontrol -y 
+# choco install windowsspyblocker -y 
+# choco install bulk-crap-uninstaller -y 
+# choco install ddu -y 
+# choco install bleachbit -y 
+# choco install bleachbit.portable -y 
+# choco install ccleaner -y 
+# choco install ccenhancer -y 
+# choco install ccleaner.portable -y 
+# choco install ccenhancer.portable -y 
+# choco install recuva -y 
+
+### Server Software
+# choco install openvpn -y 
+# choco install plexmediaserver -y 
+# choco install jellyfin -y 
+# choco install hamachi -y 
+
+### Web Browsers
+
+### Gecko-based Browsers
+choco install firefox -y 
+# choco install waterfox -y 
+# choco install waterfox-classic -y 
+# choco install icecat -y 
+# choco install librewolf -y 
+# choco install tor-browser -y 
+# choco install tor-browser-dev -y 
+
+### Goanna-based browser
+# choco install basilisk -y 
+# choco install palemoon -y 
+# choco install k-meleon -y 
+# choco install k-meleon.portable -y 
+
+### Improving Gecko/Goanna Browsers
+BetterFirefox_Standard 
+# BetterFirefox_Advanced 
+# BetterFirefox_Hardcore 
+
+### Blink/Chromium-based Browsers
+# choco install microsoft-edge -y 
+# choco install microsoft-edge-insider -y 
+# choco install microsoft-edge-insider-dev -y 
+# choco install brave -y 
+# choco install vivaldi -y 
+# choco install googlechrome -y 
+# choco install googlechrome.dev -y 
+# choco install googlechrome.canary -y 
+# choco install chromium -y 
+# choco install ungoogled-chromium -y 
+# choco install iridium-browser -y 
+# choco install otter-browser -y 
+# choco install opera -y 
+# choco install opera-gx -y 
+# choco install opera-neon -y 
+# choco install opera-developer -y 
+# choco install centbrowser -y 
+# choco install beaker -y 
+# choco install qutebrowser -y 
+# choco install vieb -y 
+# choco install srwareiron -y 
+
+### VPNs
+# choco install openvpn -y 
+# choco install openvpn-connect -y 
+# choco install nordvpn -y 
+# choco install mullvad-app -y 
+
+### Cloud Storage
+# choco install onedrive -y 
+# choco install googledrive -y 
+# choco install megasync -y 
+# choco install dropbox -y 
+# choco install nextcloud-client -y 
+# choco install synctrayzor -y 
+
+### Downloading Tools
+# choco install qbittorrent -y 
+# choco install jdownloader -y 
+# choco install sonarr -y 
+# choco install lidarr -y 
+# choco install radarr -y 
+
+### Password Managers
+# choco install keepass -y 
+# choco install keepassxc -y 
+# choco install keepassx -y 
+# choco install 1password -y 
+# choco install dashlane -y 
+# choco install lastpass -y 
+
+### Email Clients
+# choco install thunderbird -y 
+# choco install thunderbird -y 
+# choco install birdtray -y 
+# choco install mailspring -y 
+# choco install em-client -y 
+
+### File Archivers
+choco install 7zip -y 
+# choco install 7zip.portable -y 
+# choco install 7zip-zstd -y 
+# choco install peazip -y 
+# choco install peazip.portable -y 
+# choco install bandizip -y 
+# choco install winrar -y 
+
+### Text Editors
+choco install notepadplusplus -y 
+# choco install notepad2 -y 
+# choco install notepad2-mod -y 
+# choco install notepad3 -y 
+# choco install marktext -y 
+# choco install marktext.portable -y 
+
+### Office Suites
+# choco install office-tool -y 
+# choco install libreoffice -y 
+# choco install openoffice -y 
+choco install onlyoffice -y 
+# choco install freeoffice -y 
+# choco install wps-office-free -y 
+
+### PDF Readers/Editors
+choco install adobereader -y 
+# choco install pdfxchangeeditor -y 
+# choco install foxitreader -y 
+# choco install sumatrapdf -y 
+# choco install sumatrapdf.portable -y 
+# choco install pdf24 -y 
+
+### Book/Comic Readers
+# choco install sumatrapdf -y 
+# choco install sumatrapdf.portable -y 
+# choco install calibre -y 
+# choco install calibre-dedrm -y 
+# choco install yacreader -y 
+# choco install comicrack -y 
+
+### Image Viewers
+# choco install imageglass -y 
+# choco install irfanview -y 
+# choco install irfanview-shellextension -y 
+# choco install irfanviewplugins -y 
+
+### Image Editors
+# choco install gimp -y 
+# choco install photogimp -y 
+
+### Screenshots
+choco install sharex -y 
+# choco install lightshot -y 
+
+### Video Players
+choco install vlc -y 
+# choco install mpc-hc -y 
+# choco install mpc-hc-clsid2 -y 
+# choco install mpc-be -y 
+# choco install mpc-be-nightly -y 
+# choco install smplayer -y 
+
+### Video Streaming
+# choco install plex -y 
+# choco install kodi -y 
+# choco install popcorntime -y 
+
+### Video Streaming Production
+# choco install obs-studio -y 
+# choco install obs-virtualcam -y 
+# choco install obs-move-transition -y 
+# choco install obs-studio.portable -y 
+
+### Video Production
+# choco install shotcut -y 
+# choco install shotcut.portable -y 
+# choco install openshot -y 
+# choco install avidemux -y 
+# choco install handbrake -y 
+# choco install handbrake.portable -y 
+# choco install ffmpeg-batch -y 
+# choco install ffmpeg-batch.portable -y 
+# choco install mkvtoolnix -y 
+
+### Music Players
+# choco install musicbee -y 
+# choco install foobar2000 -y 
+# choco install aimp -y 
+
+### Music Streaming
+# choco install spotify -y 
+# choco install th-ch-youtube-music -y 
+# choco install plexamp -y 
+# choco install nuclear -y 
+
+### Audio Production
+# choco install audacity -y 
+# choco install voicemeeter -y 
+# choco install voicemeeter-banana -y 
+# choco install voicemeeter-potato -y 
+# choco install asio4all -y 
+# choco install reaper -y 
+
+### 3D Production
+# choco install blender -y 
+# choco install meshmixer -y 
+
+### Productivity
+# choco install notion -y 
+# choco install obsidian -y 
+# choco install activitywatch -y 
+
+### Audiovisual Communication
+# choco install discord -y 
+# choco install microsoft-teams -y 
+# choco install skype -y 
+# choco install teamspeak -y 
+# choco install slack -y 
+# choco install webex-meetings -y 
+# choco install zoom -y 
+# choco install voicemod -y 
+
+### Text-based Communication
+# choco install telegram -y 
+# choco install signal -y 
+# choco install whatsapp -y 
+
+### Remote Desktop
+# choco install teamviewer -y 
+# choco install teamviewer.portable -y 
+# choco install anydesk -y 
+# choco install anydesk.portable -y 
+# choco install nomachine -y 
+
+### Gaming Platforms
+# choco install playnite -y 
+# choco install steam-client -y 
+# choco install epicgameslauncher -y 
+# choco install goggalaxy -y 
+# choco install itch -y 
+# choco install ubisoft-connect -y 
+# choco install origin -y 
+# choco install amazongames -y 
+# choco install bethesdanet -y 
+# choco install battle.net -y 
+
+### Gaming Emulators
+# choco install retroarch -y 
+# choco install ppsspp -y 
+# choco install cemu -y 
+# choco install dolphin -y 
+# choco install project64 -y 
+# choco install mbga -y 
+
+### Gaming Utilities
+# choco install parsec -y 
+# choco install moonlight-qt -y 
+# choco install moonlight-qt.portable -y 
+# choco install vortex -y 
+# choco install borderlessgaming -y 
+# choco install sidequest -y 
+# choco install ds4windows -y 
+
+### Coding
+# choco install vscode -y 
+# choco install vscode.portable -y 
+# choco install vscode-insiders -y 
+# choco install vscodium -y 
+# choco install vscodium.portable -y 
+# choco install visualstudio2022community -y 
+# choco install vim -y 
+# choco install atom -y 
+# choco install atom.portable -y 
+# choco install github-desktop -y 
+# choco install gitkraken -y 
+# choco install jetbrainstoolbox -y 
+# choco install androidstudio -y 
+# choco install unity-hub -y 
+# choco install r.project -y 
+# choco install r.studio -y 
+# choco install rtools -y 
+# choco install python3 -y 
+# choco install python2 -y 
+# choco install anaconda3 -y 
+# choco install anaconda2 -y 
+# choco install miniconda3 -y 
+# choco install miniconda2 -y 
+# choco install ruby -y 
+# choco install cacher -y 
+
+### Development Tools
+# choco install dotnet4.6.1 -y 
+# choco install xampp-80 -y 
+# choco install cmake -y 
+# choco install docker-desktop -y 
+# choco install nsis -y 
+# choco install winmerge -y 
+
+### Research Tools
+# choco install mendeley-reference-manager -y 
+# choco install zotero -y 
+
+### Windows Desktop Environment
+# choco install rainmeter -y 
+# choco install powertoys -y 
+# choco install open-shell -y 
+# choco install start10 -y 
+# choco install f.lux -y 
+# choco install lightbulb -y 
+# choco install eartrumpet -y 
+# choco install elevenclock -y 
+# choco install altdrag -y 
+# choco install altsnap -y 
+# choco install alt-tab-terminator -y 
+# choco install qttabbar -y 
+# choco install groupy -y 
+# choco install stardock-fences -y 
+
+### Context Menu Extensions
+choco install file-converter -y 
+# choco install mediainfo -y 
+# choco install linkshellextension -y 
+
+### Windows Search Alternatives
+choco install everything -y 
+# choco install wox -y 
+# choco install ueli -y 
+# choco install launchy -y 
+# choco install cerebro -y 
+
+### Windows Explorer Alternatives
+# choco install files -y 
+# choco install doublecmd -y 
+# choco install totalcommander -y 
+# choco install multicommander -y
+# choco install freecommander-xe.install -y 
+
+### File Transfer Alternatives
+# choco install teracopy -y 
+# choco install fastcopy -y 
+
+### Virtual Machine Managers
+# choco install virtualbox -y 
+# choco install virtualbox-guest-additions-guest.install -y 
+# choco install vmware-workstation-player -y 
+# choco install vmwareworkstation -y 
+# choco install vmware-tools -y 
+
+### Miscellaneous Tools
+# choco install autohotkey -y 
+# choco install hxd -y 
+# choco install rufus -y 
+# choco install ventoy -y 
+# choco install nirlauncher -y 
+# choco install advanced-renamer -y 
+# choco install bulkrenameutility -y 
+# choco install dupeguru -y 
+# choco install alldup -y 
+
+### Hardware-specific Tools
+# choco install geforce-experience -y 
+# choco install icue -y 
+# choco install lghub -y 
+# choco install garmin-express -y 
+# choco install tomtom-mydrive-connect -y 
+
+### The End
+WaitForY 
+Restart 

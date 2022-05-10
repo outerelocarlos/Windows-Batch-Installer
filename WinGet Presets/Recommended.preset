@@ -1,0 +1,437 @@
+﻿##########
+##
+## Windows Batch Installer - WinGet Recommended Preset
+## Primary Author: Carlos Outerelo <outerelocarlos@gmail.com>
+## Primary Author Source: https://github.com/outerelocarlos/Windows-Batch-Installer
+##
+##########
+
+### Script Setup
+RequireAdmin
+CreateRestorePoint
+InstallWinget
+
+### Script Extras
+WingetSourceUpdate
+# WingetLogCleanup
+# WingetAutoUpdate # NOT RECOMMENDED (some apps misbehave)
+
+### Runtimes
+winget install -e --id Oracle.JavaRuntimeEnvironment --accept-source-agreements
+winget install -e --id Microsoft.VC++2005Redist-x86 
+winget install -e --id Microsoft.VC++2005Redist-x64 
+winget install -e --id Microsoft.VC++2008Redist-x86 
+winget install -e --id Microsoft.VC++2008Redist-x64 
+winget install -e --id Microsoft.VC++2010Redist-x86 
+winget install -e --id Microsoft.VC++2010Redist-x64 
+winget install -e --id Microsoft.VC++2012Redist-x86 
+winget install -e --id Microsoft.VC++2012Redist-x64 
+winget install -e --id Microsoft.VC++2013Redist-x86 
+winget install -e --id Microsoft.VC++2013Redist-x64 
+winget install -e --id Microsoft.VC++2015-2022Redist-x86 
+winget install -e --id Microsoft.VC++2015-2022Redist-x64 
+
+### Additional File Extension Support
+# winget install -e --id 9NCTDW2W1BH8 --accept-package-agreements 
+# winget install -e --id 9PMMSR1CGPWG --accept-package-agreements 
+# winget install -e --id 9NMZlZ57R3T7 --accept-package-agreements 
+# winget install -e --id 9MVZQVXJBQ9V --accept-package-agreements 
+# winget install -e --id 9N95Q1ZZPMH4 --accept-package-agreements 
+
+### Command Line Utilities
+winget install -e --id Git.Git 
+# winget install -e --id GitHub.cli 
+winget install -e --id GnuWin32.Wget 
+# winget install -e --id Microsoft.WindowsTerminal 
+# winget install -e --id 9N0DX20HK701 --accept-package-agreements 
+# winget install -e --id Microsoft.WindowsTerminal.Preview 
+# winget install -e --id 9N8G5RFZ9XK3 --accept-package-agreements 
+
+### System Monitoring and Control
+# winget install -e --id CPUID.CPU-Z 
+# winget install -e --id CPUID.CPU-Z.TAICHI 
+# winget install -e --id CPUID.CPU-Z.ROG 
+# winget install -e --id CPUID.CPU-Z.PHANTOM 
+# winget install -e --id CPUID.CPU-Z.MSI 
+# winget install -e --id CPUID.CPU-Z.GBT 
+# winget install -e --id CPUID.CPU-Z.CM 
+# winget install -e --id CPUID.CPU-Z.ASR 
+# winget install -e --id CPUID.CPU-Z.AORUS 
+# winget install -e --id TechPowerUp.GPU-Z 
+# winget install -e --id REALiX.HWiNFO 
+# winget install -e --id CPUID.HWMonitor 
+# winget install -e --id AMD.RyzenMaster 
+# winget install -e --id EVGACorporation.EVGAPrecisionX1 
+# winget install -e --id 9PGZKJC81Q7 --accept-package-agreements 
+# winget install -e --id FinalWire.AIDA64.Extreme 
+# winget install -e --id FinalWire.AIDA64.Engineer 
+# winget install -e --id Geeks3D.MSIKombustor 
+# winget install -e --id Unigine.HeavenBenchmark 
+# winget install -e --id Unigine.ValleyBenchmark 
+# winget install -e --id Unigine.SuperpositionBenchmark 
+# winget install -e --id PrimateLabs.Geekbench.5 
+# winget install -e --id PrimateLabs.Geekbench.4 
+
+### System Security, Recovery and Clean-up
+# winget install -e --id Malwarebytes.Malwarebytes 
+# winget install -e --id BiniSoft.WindowsFirewallControl 
+# winget install -e --id Klocman.BulkCrapUninstaller 
+# winget install -e --id BleachBit.BleachBit 
+# winget install -e --id Piriform.CCleaner 
+# winget install -e --id SingularLabs.CCEnhancer 
+# winget install -e --id Piriform.Recuva 
+
+### Server Software
+# winget install -e --id OpenVPNTechnologies.OpenVPN 
+# winget install -e --id Plex.PlexMediaServer 
+# winget install -e --id Jellyfin.JellyfinServer 
+# winget install -e --id LogMeIn.Hamachi 
+
+### Web Browsers
+
+### Gecko-based Browsers
+winget install -e --id Mozilla.Firefox 
+# winget install -e --id Mozilla.Firefox.ESR 
+# winget install -e --id Mozilla.Firefox.Beta 
+# winget install -e --id Mozilla.Firefox.DeveloperEdition 
+# winget install -e --id Mozilla.Firefox.Nightly 
+# winget install -e --id Waterfox.Waterfox 
+# winget install -e --id Waterfox.Waterfox.Classic 
+# winget install -e --id LibreWolf.LibreWolf 
+# winget install -e --id TorProject.TorBrowser 
+
+### Goanna-based browser
+# winget install -e --id basilisk.basilisk 
+# winget install -e --id MoonchildProductions.PaleMoon 
+# winget install -e --id kmeleonbrowser.K-Meleon 
+
+### Improving Gecko/Goanna Browsers
+BetterFirefox_Standard 
+# BetterFirefox_Advanced 
+# BetterFirefox_Hardcore 
+
+### Blink/Chromium-based Browsers
+# winget install -e --id Microsoft.Edge 
+# winget install -e --id rcmaehl.MSEdgeRedirect 
+# winget install -e --id Microsoft.Edge.Beta 
+# winget install -e --id Microsoft.Edge.Dev 
+# winget install -e --id BraveSoftware.BraveBrowser 
+# winget install -e --id BraveSoftware.BraveBrowser.Beta 
+# winget install -e --id BraveSoftware.BraveBrowser.Nightly 
+# winget install -e --id VivaldiTechnologies.Vivaldi 
+# winget install -e --id VivaldiTechnologies.Vivaldi.Snapshot 
+# winget install -e --id Google.Chrome 
+# winget install -e --id Google.Chrome.Beta 
+# winget install -e --id Google.Chrome.Dev 
+# winget install -e --id Google.Chrome.Canary 
+# winget install -e --id eloston.ungoogled-chromium 
+# winget install -e --id OtterBrowserTeam.OtterBrowser 
+# winget install -e --id Opera.Opera 
+# winget install -e --id Opera.OperaGX 
+# winget install -e --id Opera.Opera.Beta 
+# winget install -e --id CentStudio.CentBrowser 
+# winget install -e --id PaulFrazee.BeakerBrowser 
+# winget install -e --id qutebrowser.qutebrowser 
+# winget install -e --id Jelmerro.Vieb 
+# winget install -e --id KDE.Falkon 
+# winget install -e --id wexond.wexond 
+# winget install -e --id liri.liribrowser 
+# winget install -e --id GhostBrowser.GhostBrowser 
+
+### VPNs
+# winget install -e --id OpenVPNTechnologies.OpenVPN 
+# winget install -e --id OpenVPNTechnologies.OpenVPNConnect 
+# winget install -e --id NordVPN.NordVPN 
+# winget install -e --id MullvadVPN.MullvadVPN 
+
+### Cloud Storage
+# winget install -e --id Microsoft.OneDrive 
+# winget install -e --id Google.Drive 
+# winget install -e --id Mega.MEGASync 
+# winget install -e --id Dropbox.Dropbox 
+# winget install -e --id Nextcloud.NextcloudDesktop 
+# winget install -e --id SyncTrayzor.SyncTrayzor 
+
+### Downloading Tools
+# winget install -e --id qBittorrent.qBittorrent 
+# winget install -e --id AppWork.JDownloader 
+# winget install -e --id TeamSonarr.Sonarr 
+# winget install -e --id TeamLidarr.Lidarr 
+# winget install -e --id TeamRadarr.Radarr 
+# winget install -e --id Shabinder.SpotiFlyer 
+
+### Password Managers
+# winget install -e --id DominikReichl.KeePass 
+# winget install -e --id KeePassXCTeam.KeePassXC 
+# winget install -e --id Bitwarden.Bitwarden 
+# winget install -e --id AgileBits.1Password 
+# winget install -e --id Dashlane.Dashlane 
+# winget install -e --id LogMeIn.LastPass 
+
+### Email Clients
+# winget install -e --id Mozilla.Thunderbird 
+# winget install -e --id Mozilla.Thunderbird.Beta 
+# winget install -e --id Foundry376.Mailspring 
+# winget install -e --id eMClient.eMClient 
+
+### File Archivers
+winget install -e --id 7zip.7zip 
+# winget install -e --id mcmilk.7zip-zstd 
+# winget install -e --id M2Team.NanaZip 
+# winget install -e --id Giorgiotani.Peazip 
+# winget install -e --id Bandisoft.Bandizip 
+# winget install -e --id RARLab.WinRAR 
+# winget install -e --id RARLab.WinRAR.Beta 
+# winget install -e --id Corel.WinZip 
+
+### Text Editors
+winget install -e --id Notepad++.Notepad++  
+# winget install -e --id Notepad2mod.Notepad2mod 
+# winget install -e --id JackieLiu.NotepadsApp 
+# winget install -e --id MarkText.MarkText 
+
+### Office Suites
+# winget install -e --id Microsoft.Office 
+# winget install -e --id LibreOffice.LibreOffice 
+# winget install -e --id Apache.OpenOffice 
+winget install -e --id ONLYOFFICE.DesktopEditors 
+# winget install -e --id Kingsoft.WPSOffice 
+
+### PDF Readers/Editors
+winget install -e --id Adobe.Acrobat.Reader.32-bit 
+# winget install -e --id Adobe.Acrobat.Reader.64-bit 
+# winget install -e --id XPDP273C0XHQH2 --accept-package-agreements 
+# winget install -e --id TrackerSoftware.PDF-XChangeEditor 
+# winget install -e --id Foxit.FoxitReader 
+# winget install -e --id SumatraPDF.SumatraPDF 
+# winget install -e --id geeksoftwareGmbH.PDF24Creator 
+
+### Book/Comic Readers
+# winget install -e --id SumatraPDF.SumatraPDF 
+# winget install -e --id calibre.calibre 
+# winget install -e --id calibre.calibre.portable 
+# winget install -e --id YACReader.YACReader 
+
+### Image Viewers
+# winget install -e --id DuongDieuPhap.ImageGlass 
+# winget install -e --id IrfanSkiljan.IrfanView 
+
+### Image Editors
+# winget install -e --id GIMP.GIMP 
+# winget install -e --id GIMP.GIMP.Nightly 
+# winget install -e --id Inkscape.Inkscape 
+
+### Screenshots
+winget install -e --id ShareX.ShareX 
+
+### Video Players
+winget install -e --id VideoLAN.VLC 
+# winget install -e --id clsid2.mpc-hc 
+# winget install -e --id 9PD88QB3BGKN --accept-package-agreements 
+# winget install -e --id SMPlayer.SMPlayer 
+
+### Video Streaming
+# winget install -e --id 9WZDNCRFJ3TJ --accept-package-agreements 
+# winget install -e --id 9P6RC76MSMMJ --accept-package-agreements 
+# winget install -e --id 9PJJ1K9DZMRS --accept-package-agreements 
+# winget install -e --id 9NXQXXlFST89 --accept-package-agreements 
+# winget install -e --id Plex.Plex 
+# winget install -e --id Jellyfin.JellyfinMediaPlayer 
+# winget install -e --id XBMCFoundation.Kodi 
+# winget install -e --id PopcornTime.Popcorn-Time 
+# winget install -e --id PopcornTime.Popcorn-Time-Ru 
+
+### Video Streaming Production
+# winget install -e --id OBSProject.OBSStudio 
+# winget install -e --id Fenrirthviti.obs-virtual-cam 
+# winget install -e --id Andersama.obs-asio 
+
+### Video Production
+# winget install -e --id KDE.Kdenlive 
+# winget install -e --id Meltytech.Shotcut 
+# winget install -e --id OpenShot.OpenShot 
+# winget install -e --id Avidemux.Avidemux 
+# winget install -e --id HandBrake.HandBrake 
+# winget install -e --id MKVToolNix.MKVToolNix 
+
+### Music Players
+# winget install -e --id 9P4CLT2RJ1RS --accept-package-agreements 
+# winget install -e --id PeterPawlowski.foobar2000 
+# winget install -e --id AIMP.AIMP 
+
+### Music Streaming
+# winget install -e --id Spotify.Spotify 
+# winget install -e --id Ytmdesktop.Ytmdesktop 
+# winget install -e --id Plex.Plexamp 
+# winget install -e --id nukeop.nuclear 
+
+### Audio Production
+# winget install -e --id Audacity.Audacity 
+# winget install -e --id VB-Audio.Voicemeeter 
+# winget install -e --id VB-Audio.Voicemeeter.Banana 
+# winget install -e --id VB-Audio.Voicemeeter.Potato 
+# winget install -e --id MichaelTippach.ASIO4ALL 
+# winget install -e --id Cockos.REAPER 
+
+### 3D Production
+# winget install -e --id BlenderFoundation.Blender 
+
+### Productivity
+# winget install -e --id Notion.Notion 
+# winget install -e --id Obsidian.Obsidian 
+# winget install -e --id ActivityWatch.ActivityWatch 
+
+### Audiovisual Communication
+# winget install -e --id Discord.Discord 
+# winget install -e --id Microsoft.Teams 
+# winget install -e --id Microsoft.Skype 
+# winget install -e --id TeamSpeakSystems.TeamSpeakClient 
+# winget install -e --id SlackTechnologies.Slack 
+# winget install -e --id Cisco.CiscoWebexMeetings 
+# winget install -e --id Zoom.Zoom 
+# winget install -e --id Voicemod.Voicemod 
+
+### Text-based Communication
+# winget install -e --id Telegram.TelegramDesktop 
+# winget install -e --id OpenWhisperSystems.Signal 
+# winget install -e --id WhatsApp.WhatsApp 
+
+### Remote Desktop
+# winget install -e --id TeamViewer.TeamViewer 
+# winget install -e --id AnyDeskSoftwareGmbH.AnyDesk 
+# winget install -e --id NoMachine.NoMachine 
+
+### Gaming Platforms
+# winget install -e --id Playnite.Playnite 
+# winget install -e --id Valve.Steam 
+# winget install -e --id EpicGames.EpicGamesLauncher 
+# winget install -e --id GOG.Galaxy 
+# winget install -e --id HeroicGamesLauncher.HeroicGamesLauncher 
+# winget install -e --id Ubisoft.Connect 
+# winget install -e --id ElectronicArts.EADesktop 
+# winget install -e --id Amazon.Games 
+# winget install -e --id Bethesda.Launcher 
+
+### Gaming Emulators
+# winget install -e --id Emulationstation.Emulationstation 
+# winget install -e --id PPSSPPTeam.PPSSPP 
+# winget install -e --id DolphinEmulator.Dolphin 
+# winget install -e --id Project64.Project64 
+# winget install -e --id JeffreyPfau.mGBA 
+
+### Gaming Utilities
+# winget install -e --id Parsec.Parsec 
+# winget install -e --id MoonlightGameStreamingProject.Moonlight 
+# winget install -e --id NexusMods.Vortex 
+# winget install -e --id Codeusa.BorderlessGaming 
+# winget install -e --id SideQuestVR.SideQuest 
+
+### Coding
+# winget install -e --id Microsoft.VisualStudioCode 
+# winget install -e --id Microsoft.VisualStudioCode.Insiders 
+# winget install -e --id VSCodium.VSCodium 
+# winget install -e --id Microsoft.VisualStudio.2022.Community 
+# winget install -e --id vim.vim 
+# winget install -e --id GitHub.Atom 
+# winget install -e --id GitHub.Atom.Beta 
+# winget install -e --id GitHub.GitHubDesktop 
+# winget install -e --id GitHub.GitHubDesktop.Beta 
+# winget install -e --id Axosoft.GitKraken 
+# winget install -e --id JetBrains.Toolbox 
+# winget install -e --id Google.AndroidStudio 
+# winget install -e --id Google.AndroidStudio.Beta 
+# winget install -e --id Google.AndroidStudio.Canary 
+# winget install -e --id UnityTechnologies.UnityHub 
+# winget install -e --id RProject.R 
+# winget install -e --id RStudio.RStudio.OpenSource 
+# winget install -e --id RProject.Rtools 
+# winget install -e --id Python.Python.3 
+# winget install -e --id Python.Python.2 
+# winget install -e --id Anaconda.Anaconda3 
+# winget install -e --id Anaconda.Miniconda3 
+# winget install -e --id Spyder.Spyder 
+# winget install -e --id RubyInstallerTeam.Ruby 
+# winget install -e --id RubyInstallerTeam.RubyWithDevKit 
+# winget install -e --id PenguinLabs.Cacher 
+# winget install -e --id kite.kite 
+
+### Development Tools
+# winget install -e --id Microsoft.dotNetFramework 
+# winget install -e --id ApacheFriends.Xampp 
+# winget install -e --id Kitware.CMake 
+# winget install -e --id Docker.DockerDesktop 
+# winget install -e --id NSIS.NSIS 
+# winget install -e --id WinMerge.WinMerge 
+
+### Research Tools
+# winget install -e --id Zotero.Zotero 
+
+### Windows Desktop Environment
+# winget install -e --id Rainmeter.Rainmeter 
+# winget install -e --id Microsoft.PowerToys 
+# winget install -e --id Open-Shell.Open-Shell-Menu 
+# winget install -e --id StartIsBack.StartIsBack 
+# winget install StartIsBack.StartAllBack 
+# winget install -e --id Stardock.Start10 
+# winget install -e --id Stardock.Start11 
+# winget install -e --id 9MTFTXSJ9M7F --accept-package-agreements 
+# winget install -e --id xanderfrangos.twinkletray 
+# winget install -e --id 9PLJWWSV01lK --accept-package-agreements 
+# winget install -e --id flux.flux 
+# winget install -e --id Tyrrrz.LightBulb 
+# winget install -e --id File-New-Project.EarTrumpet 
+# winget install -e --id 9NBLGGH516XP --accept-package-agreements 
+# winget install -e --id SomePythonThings.ElevenClock 
+# winget install -e --id AltDrag.AltDrag 
+# winget install -e --id AltSnap.AltSnap 
+# winget install -e --id QTTabBar.QTTabBar 
+# winget install -e --id Stardock.Fences 
+
+### Context Menu Extensions
+winget install -e --id AdrienAllard.FileConverter 
+# winget install -e --id MediaArea.MediaInfo 
+# winget install -e --id HermannSchinagl.LinkShellExtension 
+
+### Windows Search Alternatives
+winget install -e --id voidtools.Everything 
+# winget install -e --id voidtools.Everything.Lite 
+# winget install -e --id stnkl.EverythingToolbar 
+# winget install -e --id Wox.Wox 
+# winget install -e --id OliverSchwendener.ueli 
+# winget install -e --id CodeJelly.Launchy 
+# winget install -e --id AlexandrSubbotin.Cerebro 
+
+### Windows Explorer Alternatives
+# winget install -e --id 9nghp3dx8hdx --accept-package-agreements 
+# winget install -e --id alexx2000.DoubleCommander 
+# winget install -e --id Ghisler.TotalCommander 
+# winget install -e --id MathiasSvensson.MultiCommander 
+# winget install -e --id 9NBLGGH4NFS5 --accept-package-agreements 
+# winget install -e --id MarekJasinski.FreeCommanderXE 
+
+### File Transfer Alternatives
+# winget install -e --id CodeSector.TeraCopy 
+# winget install -e --id FastCopy.FastCopy 
+
+### Virtual Machine Managers
+# winget install -e --id Oracle.VirtualBox 
+# winget install -e --id VMware.WorkstationPlayer 
+# winget install -e --id VMware.WorkstationPro 
+
+### Miscellaneous Tools
+# winget install -e --id Lexikos.AutoHotkey 
+# winget install -e --id Rufus.Rufus 
+# winget install -e --id 9PC3H3V7Q9CH --accept-package-agreements 
+# winget install -e --id HulubuluSoftware.AdvancedRenamer 
+# winget install -e --id TGRMNSoftware.BulkRenameUtility 
+# winget install -e --id DupeGuru.DupeGuru 
+
+### Hardware-specific Tools
+# winget install -e --id Nvidia.GeForceExperience 
+# winget install -e --id Corsair.iCUE.4 
+# winget install -e --id Logitech.GHUB 
+# winget install -e --id Garmin.Express 
+
+### The End
+WaitForY 
+Restart 

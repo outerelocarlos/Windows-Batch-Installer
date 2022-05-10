@@ -1,0 +1,1684 @@
+﻿##########
+##
+## Windows Batch Installer - mywindowsmediaserver Preset
+## Primary Author: Carlos Outerelo <outerelocarlos@gmail.com>
+## Primary Author Source: https://github.com/outerelocarlos/Windows-Batch-Installer
+##
+##########
+
+#################### Script Setup ####################
+
+RequireAdmin 
+CreateRestorePoint 
+InstallWinget 
+InstallChocolatey 
+
+#################### Script Extras ####################
+
+WingetSourceUpdate 
+# WingetLogCleanup 
+# WingetAutoUpdate # NOT RECOMMENDED (some apps misbehave)
+ChocolateyAutoUpdate 
+
+#################### Runtimes ####################
+
+### Java Runtime Environment
+winget install -e --id Oracle.JavaRuntimeEnvironment --accept-source-agreements
+# choco install javaruntime -y 
+
+### Microsoft Visual C++ Redistributables
+winget install -e --id Microsoft.VC++2005Redist-x86 
+winget install -e --id Microsoft.VC++2005Redist-x64 
+winget install -e --id Microsoft.VC++2008Redist-x86 
+winget install -e --id Microsoft.VC++2008Redist-x64 
+winget install -e --id Microsoft.VC++2010Redist-x86 
+winget install -e --id Microsoft.VC++2010Redist-x64 
+winget install -e --id Microsoft.VC++2012Redist-x86 
+winget install -e --id Microsoft.VC++2012Redist-x64 
+winget install -e --id Microsoft.VC++2013Redist-x86 
+winget install -e --id Microsoft.VC++2013Redist-x64 
+winget install -e --id Microsoft.VC++2015-2022Redist-x86 
+winget install -e --id Microsoft.VC++2015-2022Redist-x64 
+# choco install vcredist-all -y 
+
+### DirectX
+# No WinGet package as of now 
+# choco install directx -y 
+
+#################### Additional File Extension Support ####################
+
+### Raw Image Extension
+winget install -e --id 9NCTDW2W1BH8 --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### HEIF Image Extensions
+winget install -e --id 9PMMSR1CGPWG --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### HEVC Video Extensions
+winget install -e --id 9NMZlZ57R3T7 --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### AV1 Video Extensions
+winget install -e --id 9MVZQVXJBQ9V --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### MPEG-2 Video Extensions
+winget install -e --id 9N95Q1ZZPMH4 --accept-package-agreements 
+# No Chocolatey package as of now 
+
+#################### Command Line Utilities ####################
+
+### Git
+winget install -e --id Git.Git 
+# choco install git -y 
+
+### GitHub CLI
+# winget install -e --id GitHub.cli 
+# choco install gh -y 
+
+### Wget
+winget install -e --id GnuWin32.Wget 
+# choco install wget -y 
+
+### sed
+# No WinGet package as of now 
+choco install sed -y 
+
+### Windows Terminal
+# winget install -e --id Microsoft.WindowsTerminal 
+# winget install -e --id 9N0DX20HK701 --accept-package-agreements 
+# choco install microsoft-windows-terminal -y 
+
+### Windows Terminal Preview
+# winget install -e --id Microsoft.WindowsTerminal.Preview 
+# winget install -e --id 9N8G5RFZ9XK3 --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### Android Debug Bridge (adb)
+# No winget package as of now, but can be installed alongside Android Studio
+# choco install adb -y 
+
+### FFmpeg
+# No WinGet package as of now 
+choco install ffmpeg-full -y 
+
+### Nircmd
+# No WinGet package as of now 
+choco install nircmd -y 
+
+#################### System Monitoring and Control ####################
+
+### CPU-Z (Classic Version)
+winget install -e --id CPUID.CPU-Z 
+# choco install cpu-z -y 
+
+### CPU-Z (Custom Versions)
+# winget install -e --id CPUID.CPU-Z.TAICHI 
+# winget install -e --id CPUID.CPU-Z.ROG 
+# winget install -e --id CPUID.CPU-Z.PHANTOM 
+# winget install -e --id CPUID.CPU-Z.MSI 
+# winget install -e --id CPUID.CPU-Z.GBT 
+# winget install -e --id CPUID.CPU-Z.CM 
+# winget install -e --id CPUID.CPU-Z.ASR 
+# winget install -e --id CPUID.CPU-Z.AORUS 
+# No Chocolatey packages as of now 
+
+### GPU-Z
+winget install -e --id TechPowerUp.GPU-Z 
+# choco install gpu-z -y 
+
+### PCI-Z
+# No WinGet package as of now 
+# choco install pci-z -y 
+
+### HWiNFO
+winget install -e --id REALiX.HWiNFO 
+# choco install hwinfo -y 
+
+### HWiNFO Portable
+# No WinGet package as of now 
+# choco install hwinfo.portable -y 
+
+### HWMonitor
+# winget install -e --id CPUID.HWMonitor 
+# choco install hwmonitor -y 
+
+### AMD Ryzen Master
+# winget install -e --id AMD.RyzenMaster 
+# No Chocolatey package as of now 
+
+### MSI Afterburner
+# No WinGet package as of now 
+choco install msiafterburner -y 
+
+### EVGA Precision X1
+# winget install -e --id EVGACorporation.EVGAPrecisionX1 
+# choco install evga-precision-x1 -y 
+
+### OCCT
+# No WinGet package as of now 
+# choco install occt -y 
+
+### Cinebench
+winget install -e --id 9PGZKJC81Q7 --accept-package-agreements 
+# choco install cinebench -y 
+
+### Prime95
+# No WinGet package as of now 
+choco install prime95 -y 
+
+### Prime95 Portable
+# No WinGet package as of now 
+# choco install prime95.portable -y 
+
+### AIDA64
+winget install -e --id FinalWire.AIDA64.Extreme 
+winget install -e --id FinalWire.AIDA64.Engineer 
+# choco install aida64-extreme -y 
+# choco install aida64-engineer -y 
+
+### Furmark
+# No WinGet package as of now 
+# choco install furmark -y 
+
+### MSI Kombustor
+winget install -e --id Geeks3D.MSIKombustor 
+# No Chocolatey package as of now 
+
+### Unigine Heaven
+# winget install -e --id Unigine.HeavenBenchmark 
+# choco install heaven-benchmark -y 
+
+### Unigine Valley
+# winget install -e --id Unigine.ValleyBenchmark 
+# choco install heaven-benchmark -y 
+
+### Unigine Superposition
+# winget install -e --id Unigine.SuperpositionBenchmark 
+# choco install superposition-benchmark -y 
+
+### Geekbench 5
+# winget install -e --id PrimateLabs.Geekbench.5 
+# No Chocolatey package as of now 
+
+### Geekbench 4
+# winget install -e --id PrimateLabs.Geekbench.4 
+# No Chocolatey package as of now 
+
+#################### System Security, Recovery and Clean-up ####################
+
+### Malwarebytes
+# winget install -e --id Malwarebytes.Malwarebytes 
+# choco install malwarebytes -y 
+
+### AdwCleaner
+# No WinGet package as of now 
+choco install adwcleaner -y 
+
+### Windows Firewall Control
+winget install -e --id BiniSoft.WindowsFirewallControl 
+# choco install windowsfirewallcontrol -y 
+
+### Windows Spy Blocker
+# No WinGet package as of now 
+# choco install windowsspyblocker -y 
+
+### Bulk Crap Uninstaller
+winget install -e --id Klocman.BulkCrapUninstaller 
+# choco install bulk-crap-uninstaller -y 
+
+### Display Driver Uninstaller (DDU)
+# No WinGet package as of now 
+choco install ddu -y 
+
+### BleachBit
+winget install -e --id BleachBit.BleachBit 
+# choco install bleachbit -y 
+
+### BleachBit Portable
+# No WinGet package as of now 
+# choco install bleachbit.portable -y 
+
+### CCleaner
+# winget install -e --id Piriform.CCleaner 
+# winget install -e --id SingularLabs.CCEnhancer 
+# choco install ccleaner -y 
+# choco install ccenhancer -y 
+
+### CCleaner Portable
+# No WinGet package for neither CCleaner nor for CCEnhancer (portable) 
+# choco install ccleaner.portable -y 
+# choco install ccenhancer.portable -y 
+
+### Recuva
+winget install -e --id Piriform.Recuva 
+# choco install recuva -y 
+
+#################### Server Software ####################
+
+### OpenVPN
+# winget install -e --id OpenVPNTechnologies.OpenVPN 
+# choco install openvpn -y 
+
+### Plex Media Server
+winget install -e --id Plex.PlexMediaServer 
+# choco install plexmediaserver -y 
+
+### Jellyfin Server
+winget install -e --id Jellyfin.JellyfinServer 
+# choco install jellyfin -y 
+
+### Hamachi
+# winget install -e --id LogMeIn.Hamachi 
+# choco install hamachi -y 
+
+### TeamSpeak
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+#################### Web Browsers ####################
+
+#################### Gecko-based Browsers ####################
+
+### Firefox
+winget install -e --id Mozilla.Firefox 
+# choco install firefox -y 
+
+### Firefox Extended Support Release
+# winget install -e --id Mozilla.Firefox.ESR 
+# No Chocolatey package as of now  
+
+### Firefox Beta
+# winget install -e --id Mozilla.Firefox.Beta 
+# No Chocolatey package as of now 
+
+### Firefox Developer
+# winget install -e --id Mozilla.Firefox.DeveloperEdition 
+# No Chocolatey package as of now 
+
+### Firefox Nightly
+# winget install -e --id Mozilla.Firefox.Nightly 
+# No Chocolatey package as of now 
+
+### Waterfox
+# winget install -e --id Waterfox.Waterfox 
+# choco install waterfox -y 
+
+### Waterfox Classic
+# winget install -e --id Waterfox.Waterfox.Classic 
+# choco install waterfox-classic -y 
+
+### GNU Icecat
+# No WinGet package as of now 
+# choco install icecat -y 
+
+### LibreWolf
+# winget install -e --id LibreWolf.LibreWolf 
+# choco install librewolf -y 
+
+### Tor Browser
+winget install -e --id TorProject.TorBrowser 
+# choco install tor-browser -y 
+
+### Tor Browser (alpha)
+# No WinGet package as of now 
+# choco install tor-browser-dev -y 
+
+### SlimBrowser
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+#################### Goanna-based browser ####################
+
+### Basilisk
+# winget install -e --id basilisk.basilisk 
+# choco install basilisk -y 
+
+### Palemoon
+# winget install -e --id MoonchildProductions.PaleMoon 
+# choco install palemoon -y 
+
+### K-Meleon
+# winget install -e --id kmeleonbrowser.K-Meleon 
+# choco install k-meleon -y 
+
+### K-Meleon Portable
+# No WinGet package as of now 
+# choco install k-meleon.portable -y 
+
+#################### Improving Gecko/Goanna Browsers ####################
+
+# BetterFirefox_Standard 
+BetterFirefox_Advanced 
+# BetterFirefox_Hardcore 
+
+#################### Blink/Chromium-based Browsers ####################
+
+### Microsoft Edge
+# winget install -e --id Microsoft.Edge 
+# choco install microsoft-edge -y 
+
+### MSEdgeRedirect
+winget install -e --id rcmaehl.MSEdgeRedirect 
+# No Chocolatey package as of now 
+
+### Microsoft Edge Beta
+# winget install -e --id Microsoft.Edge.Beta 
+# choco install microsoft-edge-insider -y 
+
+### Microsoft Edge Dev
+# winget install -e --id Microsoft.Edge.Dev 
+# choco install microsoft-edge-insider-dev -y 
+
+### Microsoft Edge Cannary
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### Brave
+winget install -e --id BraveSoftware.BraveBrowser 
+# choco install brave -y 
+
+### Brave Beta
+# winget install -e --id BraveSoftware.BraveBrowser.Beta 
+# No Chocolatey package as of now 
+
+### Brave Nightly
+# winget install -e --id BraveSoftware.BraveBrowser.Nightly 
+# No Chocolatey package as of now 
+
+### Brave Portable
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### Vivaldi
+# winget install -e --id VivaldiTechnologies.Vivaldi 
+# choco install vivaldi -y 
+
+### Vivaldi Snapshot
+# winget install -e --id VivaldiTechnologies.Vivaldi.Snapshot 
+# No Chocolatey package as of now 
+
+### Google Chrome
+# winget install -e --id Google.Chrome 
+# choco install googlechrome -y 
+
+### Google Chrome Beta
+# winget install -e --id Google.Chrome.Beta 
+# No Chocolatey package as of now 
+
+### Google Chrome Dev
+# winget install -e --id Google.Chrome.Dev 
+# choco install googlechrome.dev -y 
+
+### Google Chrome Canary
+# winget install -e --id Google.Chrome.Canary 
+# choco install googlechrome.canary -y 
+
+### Chromium
+# No WinGet package as of now 
+# choco install chromium -y 
+
+### Ungoogled Chromium
+# winget install -e --id eloston.ungoogled-chromium 
+# choco install ungoogled-chromium -y 
+
+### Iridium Browser
+# No WinGet package as of now
+# choco install iridium-browser -y 
+
+### Otter Browser
+# winget install -e --id OtterBrowserTeam.OtterBrowser 
+# choco install otter-browser -y 
+
+### Opera
+# winget install -e --id Opera.Opera 
+# choco install opera -y 
+
+### Opera GX
+# winget install -e --id Opera.OperaGX 
+# choco install opera-gx -y 
+
+### Opera Neon
+# No WinGet package as of now 
+# choco install opera-neon -y 
+
+### Opera beta
+# winget install -e --id Opera.Opera.Beta 
+# No Chocolatey package as of now 
+
+### Opera developer
+# No WinGet package as of now 
+# choco install opera-developer -y 
+
+### Cent Browser
+# winget install -e --id CentStudio.CentBrowser 
+# choco install centbrowser -y 
+
+### Beaker
+winget install -e --id PaulFrazee.BeakerBrowser 
+# choco install beaker -y 
+
+### qutebrowser
+# winget install -e --id qutebrowser.qutebrowser 
+# choco install qutebrowser -y 
+
+### Vieb
+# winget install -e --id Jelmerro.Vieb 
+# choco install vieb -y 
+
+### Dooble
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### Falkon
+# winget install -e --id KDE.Falkon 
+# No Chocolatey package as of now 
+
+### Wexond
+# winget install -e --id wexond.wexond 
+# No Chocolatey package as of now 
+
+### Liri Browser
+# winget install -e --id liri.liribrowser 
+# No Chocolatey package as of now 
+
+### SRWare Iron
+# No WinGet package as of now 
+# choco install srwareiron -y 
+
+### Slimjet
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### Epic Browser
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### Ghost Browser
+# winget install -e --id GhostBrowser.GhostBrowser 
+# No Chocolatey package as of now 
+
+### Yandex Browser
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### UC Browser
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+#################### VPNs ####################
+
+### OpenVPN
+# winget install -e --id OpenVPNTechnologies.OpenVPN 
+# choco install openvpn -y 
+
+### OpenVPN Connect
+# winget install -e --id OpenVPNTechnologies.OpenVPNConnect 
+# choco install openvpn-connect -y 
+
+### NordVPN
+# winget install -e --id NordVPN.NordVPN 
+# choco install nordvpn -y 
+
+### Mullvad
+# winget install -e --id MullvadVPN.MullvadVPN 
+# choco install mullvad-app -y 
+
+#################### Cloud Storage ####################
+
+### OneDrive
+# winget install -e --id Microsoft.OneDrive 
+# choco install onedrive -y 
+
+### Google Drive
+# winget install -e --id Google.Drive 
+# choco install googledrive -y 
+
+### MEGA
+# winget install -e --id Mega.MEGASync 
+# choco install megasync -y 
+
+### Dropbox
+# winget install -e --id Dropbox.Dropbox 
+# choco install dropbox -y 
+
+### Nextcloud Desktop Client
+# winget install -e --id Nextcloud.NextcloudDesktop 
+# choco install nextcloud-client -y 
+
+### Syncthing
+# winget install -e --id SyncTrayzor.SyncTrayzor 
+# choco install synctrayzor -y 
+
+#################### Downloading Tools ####################
+
+### qbittorrent
+winget install -e --id qBittorrent.qBittorrent 
+# choco install qbittorrent -y 
+
+### JDownloader
+winget install -e --id AppWork.JDownloader 
+# choco install jdownloader -y 
+
+### Sonarr
+winget install -e --id TeamSonarr.Sonarr 
+# choco install sonarr -y 
+
+### Lidarr
+winget install -e --id TeamLidarr.Lidarr 
+# choco install lidarr -y 
+
+### Radarr
+winget install -e --id TeamRadarr.Radarr 
+# choco install radarr -y 
+
+### Spotiflyer
+# winget install -e --id Shabinder.SpotiFlyer 
+# No Chocolatey package as of now 
+
+#################### Password Managers ####################
+
+### KeePass
+# winget install -e --id DominikReichl.KeePass 
+# choco install keepass -y 
+
+### KeePassXC
+# winget install -e --id KeePassXCTeam.KeePassXC 
+# choco install keepassxc -y 
+
+### KeePassX
+# No WinGet package as of now 
+# choco install keepassx -y 
+
+### Bitwarden
+# winget install -e --id Bitwarden.Bitwarden 
+# No Chocolatey package as of now 
+
+### Synology C2 Password
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### 1Password
+# winget install -e --id AgileBits.1Password 
+# choco install 1password -y 
+
+### Dashlane
+# winget install -e --id Dashlane.Dashlane 
+# choco install dashlane -y 
+
+### LastPass
+# winget install -e --id LogMeIn.LastPass 
+# choco install lastpass -y 
+
+#################### Email Clients ####################
+
+### Outlook
+
+### Thunderbird
+# winget install -e --id Mozilla.Thunderbird 
+# choco install thunderbird -y 
+
+### Thunderbird Beta
+# winget install -e --id Mozilla.Thunderbird.Beta 
+# choco install thunderbird -y 
+
+### Birdtray
+# No WinGet package as of now 
+# choco install birdtray -y 
+
+### Mailspring
+winget install -e --id Foundry376.Mailspring 
+# choco install mailspring -y 
+
+### eM Client
+# winget install -e --id eMClient.eMClient 
+# choco install em-client -y 
+
+#################### File Archivers ####################
+
+### 7-Zip
+winget install -e --id 7zip.7zip 
+# choco install 7zip -y 
+
+### 7-Zip Portable
+# No WinGet package as of now 
+# choco install 7zip.portable -y 
+
+### 7-Zip ZSTD
+# winget install -e --id mcmilk.7zip-zstd 
+# choco install 7zip-zstd -y 
+
+### NanaZip
+# winget install -e --id M2Team.NanaZip 
+# No Chocolatey package as of now 
+
+### PeaZip
+# winget install -e --id Giorgiotani.Peazip 
+# choco install peazip -y 
+
+### PeaZip Portable
+# No WinGet package as of now 
+# choco install peazip.portable -y 
+
+### Bandizip
+# winget install -e --id Bandisoft.Bandizip 
+# choco install bandizip -y 
+
+### WinRAR
+# winget install -e --id RARLab.WinRAR 
+# choco install winrar -y 
+
+### WinRAR Beta
+# winget install -e --id RARLab.WinRAR.Beta 
+# No Chocolatey package as of now 
+
+### WinZIP
+# winget install -e --id Corel.WinZip 
+# No Chocolatey package as of now 
+
+#################### Text Editors ####################
+
+### Notepad++
+winget install -e --id Notepad++.Notepad++  
+# choco install notepadplusplus -y 
+
+### Notepad2
+# No WinGet package as of now 
+# choco install notepad2 -y 
+
+### Notepad2-mod
+# winget install -e --id Notepad2mod.Notepad2mod 
+# choco install notepad2-mod -y 
+
+### Notepad 3
+# No WinGet package as of now 
+# choco install notepad3 -y 
+
+### Notepad2-zufuliu
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### Notepads
+# winget install -e --id JackieLiu.NotepadsApp 
+# No Chocolatey package as of now 
+
+### Mark Text
+# winget install -e --id MarkText.MarkText 
+# choco install marktext -y 
+
+### Mark Text Portable
+# No WinGet package as of now 
+# choco install marktext.portable -y 
+
+#################### Office Suites ####################
+
+### Microsoft Office
+# winget install -e --id Microsoft.Office 
+choco install office-tool -y 
+
+### LibreOffice
+# winget install -e --id LibreOffice.LibreOffice 
+# choco install libreoffice -y 
+
+### OpenOffice
+# winget install -e --id Apache.OpenOffice 
+# choco install openoffice -y 
+
+### OnlyOffice
+winget install -e --id ONLYOFFICE.DesktopEditors 
+# choco install onlyoffice -y 
+
+### Google Office
+
+### FreeOffice
+# No WinGet package as of now 
+# choco install freeoffice -y 
+
+### WPS Office
+# winget install -e --id Kingsoft.WPSOffice 
+# choco install wps-office-free -y 
+
+### Calligra
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+#################### PDF Readers/Editors ####################
+
+### Adobe Acrobat Reader DC
+# winget install -e --id Adobe.Acrobat.Reader.32-bit 
+# winget install -e --id Adobe.Acrobat.Reader.64-bit 
+# winget install -e --id XPDP273C0XHQH2 --accept-package-agreements 
+# choco install adobereader -y 
+
+### PDF-XChange Editor
+# winget install -e --id TrackerSoftware.PDF-XChangeEditor 
+# choco install pdfxchangeeditor -y 
+
+### Foxit Reader
+# winget install -e --id Foxit.FoxitReader 
+# choco install foxitreader -y 
+
+### Sumatra PDF
+# winget install -e --id SumatraPDF.SumatraPDF 
+# choco install sumatrapdf -y 
+
+### Sumatra PDF Portable
+# No WinGet package as of now 
+# choco install sumatrapdf.portable -y 
+
+### PDF24 Creator
+winget install -e --id geeksoftwareGmbH.PDF24Creator 
+# choco install pdf24 -y 
+
+### PDFsam Basic
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+#################### Book/Comic Readers ####################
+
+### Sumatra PDF
+# winget install -e --id SumatraPDF.SumatraPDF 
+# choco install sumatrapdf -y 
+
+### Sumatra PDF Portable
+# No WinGet package as of now 
+# choco install sumatrapdf.portable -y 
+
+### Calibre
+# winget install -e --id calibre.calibre 
+# choco install calibre -y 
+# choco install calibre-dedrm -y 
+
+### Calibre Portable
+# winget install -e --id calibre.calibre.portable 
+# No Chocolatey package as of now 
+
+### YACReader
+# winget install -e --id YACReader.YACReader 
+# choco install yacreader -y 
+
+### MComix
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### ComicRack
+# No WinGet package as of now 
+# choco install comicrack -y 
+
+#################### Image Viewers ####################
+
+### ImageGlass
+# winget install -e --id DuongDieuPhap.ImageGlass 
+# choco install imageglass -y 
+
+### IrfanView
+# winget install -e --id IrfanSkiljan.IrfanView 
+# choco install irfanview -y 
+# choco install irfanview-shellextension -y 
+# choco install irfanviewplugins -y 
+
+#################### Image Editors ####################
+
+### GIMP
+# winget install -e --id GIMP.GIMP 
+# choco install gimp -y 
+
+### GIMP Nightly
+# winget install -e --id GIMP.GIMP.Nightly 
+# No Chocolatey package as of now 
+
+### PhotoGIMP
+# No WinGet package as of now 
+choco install photogimp -y 
+
+### Inkscape
+# winget install -e --id Inkscape.Inkscape 
+# No Chocolatey package as of now 
+
+#################### Screenshots ####################
+
+### ShareX
+winget install -e --id ShareX.ShareX 
+# choco install sharex -y 
+
+### Lightshot
+# No WinGet package as of now 
+# choco install lightshot -y 
+
+#################### Video Players ####################
+
+### VLC"just works".
+winget install -e --id VideoLAN.VLC 
+# choco install vlc -y 
+
+### MPC-HC
+# No WinGet package as of now 
+# choco install mpc-hc -y 
+
+### MPC-HC fork by clsid2
+# winget install -e --id clsid2.mpc-hc 
+# choco install mpc-hc-clsid2 -y 
+
+### MPC-BE
+# winget install -e --id 9PD88QB3BGKN --accept-package-agreements 
+# choco install mpc-be -y 
+
+### MPC-BE Nightly
+# No WinGet package as of now 
+# choco install mpc-be-nightly -y 
+
+### SMPlayer
+# winget install -e --id SMPlayer.SMPlayer 
+# choco install smplayer -y 
+
+### KMPlayer
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+#################### Video Streaming ####################
+
+### Netflix
+# winget install -e --id 9WZDNCRFJ3TJ --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### Amazon Prime Video
+# winget install -e --id 9P6RC76MSMMJ --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### HBO Max
+# winget install -e --id 9PJJ1K9DZMRS --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### Disney+
+# winget install -e --id 9NXQXXlFST89 --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### Plex
+winget install -e --id Plex.Plex 
+# choco install plex -y 
+
+### Jellyfin
+winget install -e --id Jellyfin.JellyfinMediaPlayer 
+# No Chocolatey package as of now 
+
+### Emby
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### Kodi
+winget install -e --id XBMCFoundation.Kodi 
+# choco install kodi -y 
+
+### Popcorn Time
+# winget install -e --id PopcornTime.Popcorn-Time 
+# choco install popcorntime -y 
+
+### Popcorn Time Ru
+# winget install -e --id PopcornTime.Popcorn-Time-Ru 
+# No Chocolatey package as of now 
+
+#################### Video Streaming Production ####################
+
+### OBS Studio
+winget install -e --id OBSProject.OBSStudio 
+# choco install obs-studio -y 
+  
+### OBS VirtualCam
+# winget install -e --id Fenrirthviti.obs-virtual-cam 
+# choco install obs-virtualcam -y 
+  
+### StreamFX
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+  
+### Move Transitions
+# No WinGet package as of now 
+# choco install obs-move-transition -y 
+  
+### obs-asio
+# winget install -e --id Andersama.obs-asio 
+# No Chocolatey package as of now 
+
+### OBS Studio Portable
+# No WinGet package as of now 
+# choco install obs-studio.portable -y 
+
+#################### Video Production ####################
+
+### Kdenlive
+# winget install -e --id KDE.Kdenlive 
+
+### DaVinci Resolve
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### Shotcut
+# winget install -e --id Meltytech.Shotcut 
+# choco install shotcut -y 
+
+### Shotcut Portable
+# No WinGet package as of now 
+# choco install shotcut.portable -y 
+
+### OpenShot
+# winget install -e --id OpenShot.OpenShot 
+# choco install openshot -y 
+
+### Avidemux
+winget install -e --id Avidemux.Avidemux 
+# choco install avidemux -y 
+
+### Handbrake
+winget install -e --id HandBrake.HandBrake 
+# choco install handbrake -y 
+
+### Handbreak Portable
+# No WinGet package as of now 
+# choco install handbrake.portable -y 
+
+### FFmpeg Batch AV Converter
+# No WinGet package as of now 
+# choco install ffmpeg-batch -y 
+
+### FFmpeg Batch AV Converter Portable
+# No WinGet package as of now 
+# choco install ffmpeg-batch.portable -y 
+
+### MKVToolNix
+winget install -e --id MKVToolNix.MKVToolNix 
+# choco install mkvtoolnix -y 
+
+#################### Music Players ####################
+
+### Musicbee
+# winget install -e --id 9P4CLT2RJ1RS --accept-package-agreements 
+# choco install musicbee -y 
+
+### Foobar2000
+# winget install -e --id PeterPawlowski.foobar2000 
+# choco install foobar2000 -y 
+
+### AIMP
+# winget install -e --id AIMP.AIMP 
+# choco install aimp -y 
+
+#################### Music Streaming ####################
+
+### Spotify
+# winget install -e --id Spotify.Spotify 
+# choco install spotify -y 
+
+### YouTube Music
+# winget install -e --id Ytmdesktop.Ytmdesktop 
+# choco install th-ch-youtube-music -y 
+
+### Plexamp
+winget install -e --id Plex.Plexamp 
+# choco install plexamp -y 
+
+### Nuclear
+# winget install -e --id nukeop.nuclear 
+# choco install nuclear -y 
+
+#################### Audio Production ####################
+
+### Audacity
+# winget install -e --id Audacity.Audacity 
+# choco install audacity -y 
+
+### Voicemeeter
+# winget install -e --id VB-Audio.Voicemeeter 
+# choco install voicemeeter -y 
+
+### Voicemeeter Banana
+winget install -e --id VB-Audio.Voicemeeter.Banana 
+# choco install voicemeeter-banana -y 
+
+### Voicemeeter Potato
+# winget install -e --id VB-Audio.Voicemeeter.Potato 
+# choco install voicemeeter-potato -y 
+
+### ASIO4ALL
+# winget install -e --id MichaelTippach.ASIO4ALL 
+# choco install asio4all -y 
+
+### Reaper
+winget install -e --id Cockos.REAPER 
+# choco install reaper -y 
+
+#################### 3D Production ####################
+
+### Blender
+winget install -e --id BlenderFoundation.Blender 
+# choco install blender -y 
+
+### Meshmixer
+# No WinGet package as of now 
+# choco install meshmixer -y 
+
+#################### Productivity ####################
+
+### Notion
+# winget install -e --id Notion.Notion 
+# choco install notion -y 
+
+### Obsidian
+# winget install -e --id Obsidian.Obsidian 
+# choco install obsidian -y 
+
+### Jira
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### Activity Watch
+# winget install -e --id ActivityWatch.ActivityWatch 
+# choco install activitywatch -y 
+
+### RescueTime
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+#################### Audiovisual Communication ####################
+
+### Discord
+winget install -e --id Discord.Discord 
+# choco install discord -y 
+
+### Teams
+# winget install -e --id Microsoft.Teams 
+# choco install microsoft-teams -y 
+
+### Skype
+# winget install -e --id Microsoft.Skype 
+# choco install skype -y 
+
+### TeamSpeak
+# winget install -e --id TeamSpeakSystems.TeamSpeakClient 
+# choco install teamspeak -y 
+
+### Slack
+# winget install -e --id SlackTechnologies.Slack 
+# choco install slack -y 
+
+### Webex
+# winget install -e --id Cisco.CiscoWebexMeetings 
+# choco install webex-meetings -y 
+
+### Zoom
+# winget install -e --id Zoom.Zoom 
+# choco install zoom -y 
+
+### Voicemod
+# winget install -e --id Voicemod.Voicemod 
+# choco install voicemod -y 
+
+#################### Text-based Communication ####################
+
+### Telegram
+winget install -e --id Telegram.TelegramDesktop 
+# choco install telegram -y 
+
+### Signal
+# winget install -e --id OpenWhisperSystems.Signal 
+# choco install signal -y 
+
+### WhatsApp
+winget install -e --id WhatsApp.WhatsApp 
+# choco install whatsapp -y 
+
+#################### Remote Desktop ####################
+
+### TeamViewer
+winget install -e --id TeamViewer.TeamViewer 
+# choco install teamviewer -y 
+
+### TeamViewer Portable
+# No WinGet package as of now 
+# choco install teamviewer.portable -y 
+
+### Anydesk
+# winget install -e --id AnyDeskSoftwareGmbH.AnyDesk 
+# choco install anydesk -y 
+
+### Anydesk Portable
+# No WinGet package as of now 
+# choco install anydesk.portable -y 
+
+### NoMachine
+# winget install -e --id NoMachine.NoMachine 
+# choco install nomachine -y 
+
+#################### Gaming Platforms ####################
+
+### Playnite
+winget install -e --id Playnite.Playnite 
+# choco install playnite -y 
+
+### Steam
+winget install -e --id Valve.Steam 
+# choco install steam-client -y 
+
+### Epic Games
+winget install -e --id EpicGames.EpicGamesLauncher 
+# choco install epicgameslauncher -y 
+
+### GOG Galaxy
+winget install -e --id GOG.Galaxy 
+# choco install goggalaxy -y 
+
+### Heroic Game Launcher
+# winget install -e --id HeroicGamesLauncher.HeroicGamesLauncher 
+# No Chocolatey package as of now 
+
+### Itch
+# No WinGet package as of now 
+# choco install itch -y 
+
+### Ubisoft Connect
+winget install -e --id Ubisoft.Connect 
+# choco install ubisoft-connect -y 
+
+### Origin
+# No WinGet package as of now 
+# choco install origin -y 
+
+### EA app
+# winget install -e --id ElectronicArts.EADesktop 
+# No Chocolatey package as of now 
+
+### Amazon Games
+winget install -e --id Amazon.Games 
+# choco install amazongames -y 
+
+### Rockstar Game Launcher
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### Bethesda.Net Launcher
+# winget install -e --id Bethesda.Launcher 
+# choco install bethesdanet -y 
+
+### Battle.net
+# No WinGet package as of now 
+# choco install battle.net -y 
+
+### Oculus
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+#################### Gaming Emulators ####################
+
+### RetroArch
+# No WinGet package as of now 
+# choco install retroarch -y 
+
+### Emulation Station
+# winget install -e --id Emulationstation.Emulationstation 
+# No Chocolatey package as of now 
+
+### PPSSPP
+# winget install -e --id PPSSPPTeam.PPSSPP 
+# choco install ppsspp -y 
+
+### Cemu
+# No WinGet package as of now 
+# choco install cemu -y 
+
+### Dolphin
+# winget install -e --id DolphinEmulator.Dolphin 
+# choco install dolphin -y 
+
+### Project64
+# winget install -e --id Project64.Project64 
+# choco install project64 -y 
+
+### mBGA
+# winget install -e --id JeffreyPfau.mGBA 
+# choco install mbga -y 
+
+#################### Gaming Utilities ####################
+
+### Parsec
+winget install -e --id Parsec.Parsec 
+# choco install parsec -y 
+
+### Moonlight Streaming Client
+winget install -e --id MoonlightGameStreamingProject.Moonlight 
+# choco install moonlight-qt -y 
+
+### Moonlight Portable Client
+# No WinGet package as of now 
+# choco install moonlight-qt.portable -y 
+
+### Vortex
+winget install -e --id NexusMods.Vortex 
+# choco install vortex -y 
+
+### Borderless Gaming
+winget install -e --id Codeusa.BorderlessGaming 
+# choco install borderlessgaming -y 
+
+### Cheat Engine
+# No WinGet package as of now 
+# No Chocolatey package as of now 
+
+### SideQuest
+winget install -e --id SideQuestVR.SideQuest 
+# choco install sidequest -y 
+
+### DS4Windows
+# No WinGet package as of now 
+# choco install ds4windows -y 
+
+#################### Coding ####################
+
+### Visual Studio Code
+winget install -e --id Microsoft.VisualStudioCode 
+# choco install vscode -y 
+
+### Visual Studio Code Portable
+# No WinGet package as of now 
+# choco install vscode.portable -y 
+
+### Visual Studio Code Insiders
+# winget install -e --id Microsoft.VisualStudioCode.Insiders 
+# choco install vscode-insiders -y 
+
+### Visual Studio Codium
+# winget install -e --id VSCodium.VSCodium 
+# choco install vscodium -y 
+
+### Visual Studio Codium Portable
+# No WinGet package as of now 
+# choco install vscodium.portable -y 
+
+### Visual Studio 2022 Community
+winget install -e --id Microsoft.VisualStudio.2022.Community 
+# choco install visualstudio2022community -y 
+
+### Vim
+# winget install -e --id vim.vim 
+# choco install vim -y 
+
+### Atom
+# winget install -e --id GitHub.Atom 
+# choco install atom -y 
+
+### Atom Portable
+# No WinGet package as of now 
+# choco install atom.portable -y 
+
+### Atom Beta
+# winget install -e --id GitHub.Atom.Beta 
+# No Chocolatey package as of now 
+
+### Github Desktop
+winget install -e --id GitHub.GitHubDesktop 
+# choco install github-desktop -y 
+
+### Github Desktop Beta
+# winget install -e --id GitHub.GitHubDesktop.Beta 
+# No Chocolatey package as of now 
+
+### GitKraken
+# winget install -e --id Axosoft.GitKraken 
+# choco install gitkraken -y 
+
+### JetBrains Toolbox App
+winget install -e --id JetBrains.Toolbox 
+# choco install jetbrainstoolbox -y 
+
+### Android Studio
+winget install -e --id Google.AndroidStudio 
+# choco install androidstudio -y 
+
+### Android Studio Beta
+# winget install -e --id Google.AndroidStudio.Beta 
+# No Chocolatey package as of now 
+
+### Android Studio Canary
+# winget install -e --id Google.AndroidStudio.Canary 
+# No Chocolatey package as of now 
+
+### Unity Hub
+winget install -e --id UnityTechnologies.UnityHub 
+# choco install unity-hub -y 
+
+### R for Windows
+winget install -e --id RProject.R 
+# choco install r.project -y 
+
+### RStudio
+winget install -e --id RStudio.RStudio.OpenSource 
+# choco install r.studio -y 
+
+### RTools
+winget install -e --id RProject.Rtools 
+# choco install rtools -y 
+
+### Python 3
+winget install -e --id Python.Python.3 
+# choco install python3 -y 
+
+### Python 2
+# winget install -e --id Python.Python.2 
+# choco install python2 -y 
+
+### Anaconda (Python 3)
+winget install -e --id Anaconda.Anaconda3 
+# choco install anaconda3 -y 
+
+### Anaconda (Python 2)
+# No WinGet package as of now 
+# choco install anaconda2 -y 
+
+### Miniconda (Python 3)
+# winget install -e --id Anaconda.Miniconda3 
+# choco install miniconda3 -y 
+
+### Miniconda (Python 2)
+# No WinGet package as of now 
+# choco install miniconda2 -y 
+
+### Spyder
+winget install -e --id Spyder.Spyder 
+# No Chocolatey package as of now 
+
+### Ruby
+# No WinGet package as of now 
+# choco install ruby -y 
+
+### RubyInstaller
+# winget install -e --id RubyInstallerTeam.Ruby 
+# winget install -e --id RubyInstallerTeam.RubyWithDevKit 
+# No Chocolatey package as of now 
+
+### Cacher
+# winget install -e --id PenguinLabs.Cacher 
+# choco install cacher -y 
+
+### Kite
+# winget install -e --id kite.kite 
+# No Chocolatey package as of now 
+
+#################### Development Tools ####################
+
+### NET Framework
+winget install -e --id Microsoft.dotNetFramework 
+# choco install dotnet4.6.1 -y 
+
+### XAMPP
+winget install -e --id ApacheFriends.Xampp 
+# choco install xampp-80 -y 
+
+### CMake
+winget install -e --id Kitware.CMake 
+# choco install cmake -y 
+
+### Docker
+winget install -e --id Docker.DockerDesktop 
+# choco install docker-desktop -y 
+
+### NSIS
+winget install -e --id NSIS.NSIS 
+# choco install nsis -y 
+
+### WinMerge
+winget install -e --id WinMerge.WinMerge 
+# choco install winmerge -y 
+
+#################### Research Tools ####################
+
+### Mendeley Reference Manager
+# No WinGet package as of now 
+# choco install mendeley-reference-manager -y 
+
+### Zotero
+winget install -e --id Zotero.Zotero 
+# choco install zotero -y 
+
+#################### Windows Desktop Environment ####################
+
+### Rainmeter
+# winget install -e --id Rainmeter.Rainmeter 
+# choco install rainmeter -y 
+
+### PowerToys
+winget install -e --id Microsoft.PowerToys 
+# choco install powertoys -y 
+
+### Open-Shell-Menu
+# winget install -e --id Open-Shell.Open-Shell-Menu 
+# choco install open-shell -y 
+
+### StartIsBack
+# winget install -e --id StartIsBack.StartIsBack 
+# No Chocolatey package as of now 
+
+### StartAllBack
+# winget install StartIsBack.StartAllBack 
+# No Chocolatey package as of now 
+
+### Start10
+# winget install -e --id Stardock.Start10 
+# choco install start10 -y 
+
+### Start11
+# winget install -e --id Stardock.Start11 
+# No Chocolatey package as of now 
+
+### RoundedTB
+# winget install -e --id 9MTFTXSJ9M7F --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### Twinkle Tray
+winget install -e --id xanderfrangos.twinkletray 
+# winget install -e --id 9PLJWWSV01lK --accept-package-agreements 
+# No Chocolatey package as of now 
+
+### f.lux
+# winget install -e --id flux.flux 
+# choco install f.lux -y 
+
+### LightBulb
+# winget install -e --id Tyrrrz.LightBulb 
+# choco install lightbulb -y 
+
+### EarTrumpet
+# winget install -e --id File-New-Project.EarTrumpet 
+# winget install -e --id 9NBLGGH516XP --accept-package-agreements 
+# choco install eartrumpet -y 
+
+### ElevenClock
+# winget install -e --id SomePythonThings.ElevenClock 
+# choco install elevenclock -y 
+
+### AltDrag
+# winget install -e --id AltDrag.AltDrag 
+# choco install altdrag -y 
+
+### AltSnap
+# winget install -e --id AltSnap.AltSnap 
+# choco install altsnap -y 
+
+### Alt-Tab Terminator
+# No WinGet package as of now 
+# choco install alt-tab-terminator -y 
+
+### Qttabbar
+# winget install -e --id QTTabBar.QTTabBar 
+# choco install qttabbar -y 
+
+### Groupy
+# No WinGet package as of now 
+# choco install groupy -y 
+
+### Fences
+# winget install -e --id Stardock.Fences 
+# choco install stardock-fences -y 
+
+#################### Context Menu Extensions ####################
+
+### File Converter
+winget install -e --id AdrienAllard.FileConverter 
+# choco install file-converter -y 
+
+### MediaInfo
+winget install -e --id MediaArea.MediaInfo 
+# choco install mediainfo -y 
+
+### Link Shell Extension
+winget install -e --id HermannSchinagl.LinkShellExtension 
+# choco install linkshellextension -y 
+
+#################### Windows Search Alternatives ####################
+
+### Everything
+winget install -e --id voidtools.Everything 
+# choco install everything -y 
+
+### Everything Lite
+# winget install -e --id voidtools.Everything.Lite 
+# No Chocolatey package as of now 
+
+### Everything Toolbar
+# winget install -e --id stnkl.EverythingToolbar 
+# No Chocolatey package as of now 
+
+### Wox
+winget install -e --id Wox.Wox 
+# choco install wox -y 
+
+### Ueli
+# winget install -e --id OliverSchwendener.ueli 
+# choco install ueli -y 
+
+### Launchy
+# winget install -e --id CodeJelly.Launchy 
+# choco install launchy -y 
+
+### Cerebro
+# winget install -e --id AlexandrSubbotin.Cerebro 
+# choco install cerebro -y 
+
+#################### Windows Explorer Alternatives ####################
+
+### Files
+# winget install -e --id 9nghp3dx8hdx --accept-package-agreements 
+# choco install files -y 
+
+### Double Commander
+# winget install -e --id alexx2000.DoubleCommander 
+# choco install doublecmd -y 
+
+### Total Commander
+# winget install -e --id Ghisler.TotalCommander 
+# choco install totalcommander -y 
+
+### Multi Commander
+# winget install -e --id MathiasSvensson.MultiCommander 
+# winget install -e --id 9NBLGGH4NFS5 --accept-package-agreements 
+# choco install multicommander -y
+
+### FreeCommander XE
+# winget install -e --id MarekJasinski.FreeCommanderXE 
+# choco install freecommander-xe.install -y 
+
+#################### File Transfer Alternatives ####################
+
+### TeraCopy
+# winget install -e --id CodeSector.TeraCopy 
+# choco install teracopy -y 
+
+### FastCopy
+# winget install -e --id FastCopy.FastCopy 
+# choco install fastcopy -y 
+
+#################### Virtual Machine Managers ####################
+
+### VirtualBox
+# winget install -e --id Oracle.VirtualBox 
+# choco install virtualbox -y 
+
+### VirtualBox Extension Pack
+# No WinGet package as of now 
+# choco install virtualbox-guest-additions-guest.install -y 
+
+### VMware Workstation Player
+winget install -e --id VMware.WorkstationPlayer 
+# choco install vmware-workstation-player -y 
+
+### VMware Workstation Pro
+# winget install -e --id VMware.WorkstationPro 
+# choco install vmwareworkstation -y 
+
+### VMware Tools
+# No WinGet package as of now 
+# choco install vmware-tools -y 
+
+#################### Miscellaneous Tools ####################
+
+### AutoHotKey
+winget install -e --id Lexikos.AutoHotkey 
+# choco install autohotkey -y 
+
+### HxD
+# No WinGet package as of now 
+choco install hxd -y 
+
+### Rufus
+# winget install -e --id Rufus.Rufus 
+# winget install -e --id 9PC3H3V7Q9CH --accept-package-agreements 
+choco install rufus -y 
+
+### Ventoy
+# No WinGet package as of now 
+choco install ventoy -y 
+
+### NirLauncher
+# No WinGet package as of now 
+# choco install nirlauncher -y 
+
+### Advanced Renamer
+winget install -e --id HulubuluSoftware.AdvancedRenamer 
+# choco install advanced-renamer -y 
+
+### Bulk Rename Utility
+# winget install -e --id TGRMNSoftware.BulkRenameUtility 
+# choco install bulkrenameutility -y 
+
+### dupeGuru
+winget install -e --id DupeGuru.DupeGuru 
+# choco install dupeguru -y 
+
+### AllDup
+# No WinGet package as of now 
+# choco install alldup -y 
+
+#################### Hardware-specific Tools ####################
+
+### GeForce Experience
+# winget install -e --id Nvidia.GeForceExperience 
+# choco install geforce-experience -y 
+
+### Corsair iCUE
+winget install -e --id Corsair.iCUE.4 
+# choco install icue -y 
+
+### Logitech GHub
+winget install -e --id Logitech.GHUB 
+# choco install lghub -y 
+
+### Garmin Express
+# winget install -e --id Garmin.Express 
+# choco install garmin-express -y 
+
+### TomTom MyDrive Connect
+# No WinGet package as of now 
+# choco install tomtom-mydrive-connect -y 
+
+#################### The End ####################
+
+WaitForY 
+Restart 
