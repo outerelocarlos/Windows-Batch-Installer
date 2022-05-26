@@ -161,7 +161,7 @@ RequireAdmin
 # choco install occt -y 
 
 ### Cinebench
-# winget install -e --id 9PGZKJC81Q7 --accept-package-agreements 
+# winget install -e --id 9PGZKJC81Q7J --accept-package-agreements 
 # choco install cinebench -y 
 
 ### Prime95

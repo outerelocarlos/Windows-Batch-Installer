@@ -62,7 +62,7 @@ winget install -e --id REALiX.HWiNFO
 # winget install -e --id CPUID.HWMonitor 
 # winget install -e --id AMD.RyzenMaster 
 # winget install -e --id EVGACorporation.EVGAPrecisionX1 
-winget install -e --id 9PGZKJC81Q7 --accept-package-agreements 
+# winget install -e --id 9PGZKJC81Q7J --accept-package-agreements 
 winget install -e --id FinalWire.AIDA64.Extreme 
 winget install -e --id FinalWire.AIDA64.Engineer 
 winget install -e --id Geeks3D.MSIKombustor 

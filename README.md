@@ -418,7 +418,7 @@ Note that there are two WinGet installs, the first one being the standard versio
 
 * **[Cinebench](https://www.maxon.net/en/cinebench)**: Arguably the most popular CPU benchmarking tool.
 
-  * winget install -e --id 9PGZKJC81Q7 --accept-package-agreements 
+  * winget install -e --id 9PGZKJC81Q7J --accept-package-agreements 
   * choco install cinebench -y 
 
 * **[Prime95](https://www.mersenne.org/download/)**: A hardcore stress test for the CPU.
