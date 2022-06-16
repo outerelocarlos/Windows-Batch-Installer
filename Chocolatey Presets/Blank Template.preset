@@ -346,11 +346,12 @@ RequireAdmin
 
 ### Development Tools
 # choco install dotnet4.6.1 -y 
-# choco install xampp-80 -y 
 # choco install cmake -y 
 # choco install docker-desktop -y 
+# choco install nodejs -y 
 # choco install nsis -y 
 # choco install winmerge -y 
+# choco install xampp-80 -y 
 
 ### Research Tools
 # choco install mendeley-reference-manager -y 

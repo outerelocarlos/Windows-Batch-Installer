@@ -1408,10 +1408,6 @@ winget install -e --id VideoLAN.VLC
 # winget install -e --id Microsoft.dotNetFramework 
 # choco install dotnet4.6.1 -y 
 
-### XAMPP
-# winget install -e --id ApacheFriends.Xampp 
-# choco install xampp-80 -y 
-
 ### CMake
 # winget install -e --id Kitware.CMake 
 # choco install cmake -y 
@@ -1420,6 +1416,12 @@ winget install -e --id VideoLAN.VLC
 # winget install -e --id Docker.DockerDesktop 
 # choco install docker-desktop -y 
 
+### Node.js
+# winget install -e --id OpenJS.NodeJS 
+# winget install -e --id OpenJS.NodeJS.LTS 
+# winget install -e --id OpenJS.NodeJS.Nightly 
+# choco install nodejs -y 
+
 ### NSIS
 # winget install -e --id NSIS.NSIS 
 # choco install nsis -y 
@@ -1427,6 +1429,10 @@ winget install -e --id VideoLAN.VLC
 ### WinMerge
 # winget install -e --id WinMerge.WinMerge 
 # choco install winmerge -y 
+
+### XAMPP
+# winget install -e --id ApacheFriends.Xampp 
+# choco install xampp-80 -y 
 
 #################### Research Tools ####################
 
