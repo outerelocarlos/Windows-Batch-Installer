@@ -308,11 +308,12 @@ $outerelocarlos = @(
 	'winget install -e --id Spyder.Spyder '
 
 	'winget install -e --id Microsoft.dotNetFramework '
-	'winget install -e --id ApacheFriends.Xampp '
 	'winget install -e --id Kitware.CMake '
 	'winget install -e --id Docker.DockerDesktop '
+	'winget install -e --id OpenJS.NodeJS '
 	'winget install -e --id NSIS.NSIS '
 	'winget install -e --id WinMerge.WinMerge '
+	'winget install -e --id ApacheFriends.Xampp '
 
 	'winget install -e --id Zotero.Zotero '
 

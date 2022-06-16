@@ -1992,11 +1992,6 @@ Note that there are two WinGet installs, the first one being the standard bundle
   * winget install -e --id Microsoft.dotNetFramework 
   * choco install dotnet4.6.1 -y 
 
-* **[XAMPP](https://www.apachefriends.org/download.html)**: Apache server for Windows. Useful for web development.
-
-  * winget install -e --id ApacheFriends.Xampp 
-  * choco install xampp-80 -y 
-
 * **[CMake](https://cmake.org/)**: An open-source, cross-platform family of tools designed to build, test and package software.
 
   * winget install -e --id Kitware.CMake 
@@ -2007,6 +2002,13 @@ Note that there are two WinGet installs, the first one being the standard bundle
   * winget install -e --id Docker.DockerDesktop 
   * choco install docker-desktop -y 
 
+* **[Node.js](https://nodejs.org/)**: An open-source, cross-platform, back-end JavaScript runtime environment.
+
+  * winget install -e --id OpenJS.NodeJS 
+  * winget install -e --id OpenJS.NodeJS.LTS 
+  * winget install -e --id OpenJS.NodeJS.Nightly 
+  * choco install nodejs -y 
+
 * **[NSIS](https://nsis-dev.github.io/)**: An open-source system to create Windows-compatible installers.
 
   * winget install -e --id NSIS.NSIS 
@@ -2016,6 +2018,11 @@ Note that there are two WinGet installs, the first one being the standard bundle
 
   * winget install -e --id WinMerge.WinMerge 
   * choco install winmerge -y 
+
+* **[XAMPP](https://www.apachefriends.org/download.html)**: Apache server for Windows. Useful for web development.
+
+  * winget install -e --id ApacheFriends.Xampp 
+  * choco install xampp-80 -y 
 
 ### Research Tools
 
